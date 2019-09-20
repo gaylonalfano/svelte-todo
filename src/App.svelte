@@ -4,16 +4,16 @@
 
 <style lang="scss">
   .container {
-		max-width: 600px;
-		margin: 0 auto;
-	}
-	.logo {
-		display: block;
-		margin: 20px auto;
-		height: 75px;
-	}
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .logo {
+    display: block;
+    margin: 20px auto;
+    height: 75px;
+  }
 
-	.todo-input {
+  .todo-input {
     width: 100%;
     padding: 10px 18px;
     font-size: 18px;
@@ -33,7 +33,8 @@
       color: black;
     }
   }
-  .todo-item-left { // later
+  .todo-item-left {
+    // later
     display: flex;
     align-items: center;
   }
@@ -49,7 +50,7 @@
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc; //override defaults
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
     &:focus {
       outline: none;
     }
@@ -88,41 +89,39 @@
 </style>
 
 <div class="container">
-  <img src={'/img/svelte-logo-horizontal.svg'} alt="svelte logo" class="logo">
+  <img src={'/img/svelte-logo-horizontal.svg'} alt="svelte logo" class="logo" />
 
-  <input type="text" class="todo-input" placeholder="What needs to be done">
+  <input type="text" class="todo-input" placeholder="What needs to be done" />
 
   <div class="todo-item">
     <div class="todo-item-left">
-      <input type="checkbox">
+      <input type="checkbox" />
       <div class="todo-item-label">Todo Title</div>
     </div>
-    <div class="remove-item">
-      &times;
-    </div>
+    <div class="remove-item">&times;</div>
   </div>
   <div class="todo-item">
     <div class="todo-item-left">
-      <input type="checkbox" v-model="todo.completed">
+      <input type="checkbox" />
       <div class="todo-item-label">Todo Title</div>
     </div>
-    <div class="remove-item">
-      &times;
-    </div>
+    <div class="remove-item">&times;</div>
   </div>
   <div class="todo-item">
     <div class="todo-item-left">
-      <input type="checkbox" v-model="todo.completed">
+      <input type="checkbox" />
       <div class="todo-item-label">Todo Title</div>
     </div>
-    <div class="remove-item">
-      &times;
-    </div>
+    <div class="remove-item">&times;</div>
   </div>
-
 
   <div class="extra-container">
-    <div><label><input type="checkbox">Check All</label></div>
+    <div>
+      <label>
+        <input type="checkbox" />
+        Check All
+      </label>
+    </div>
     <div>3 items left</div>
   </div>
 
